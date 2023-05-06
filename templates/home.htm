@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+ <head>
+	<title>Call Log</title>
+ </head>
+ 
+ <body>
+   {% extends "bootstrap/base.html" %}
+   
+   {% block content %}
+    <h1> Call Log</h1>
+    <a href= "{{ url_for('log') }}" class="btn btn-success">Log Call</a>
+    <a href= "{{ url_for('list') }}" class="btn btn-secondary">List Calls</a>
+   {% endblock %}
+ </body>
+</html>
