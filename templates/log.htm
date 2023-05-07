@@ -13,13 +13,13 @@
    <input type = "text" name = "Date" /><br>
    Out or In<br>
    <input type = "text" name = "Out_or_In" /><br>
-   
+   <div class="btn-group">
+    <input type="submit" value="submit" class="btn">
+    <a href="{{ url_for('home') }}" class="btn btn-primary" role="button">Return Home</a>
+   </div>
    
   </form>
-  <div class="btn-group">
-   <input type="submit" value="submit" class="btn">
-   <a href="{{ url_for('home') }}" class="btn btn-primary" role="button">Return Home</a>
-  </div>
+ 
 {% endblock %}
 
  </body>

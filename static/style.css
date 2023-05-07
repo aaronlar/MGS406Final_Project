@@ -3,7 +3,18 @@ form{
  width : 50%;
  text-align: center;
 }
-.btn-group{
- margin : auto;
+body{
+margin : auto;
  width : 50%;
+ text-align: center;
+}
+head{
+margin : auto;
+ width : 50%;
+ text-align: center;
+}
+h1{
+margin : auto;
+ width : 50%;
+ text-align: center;
 }
