@@ -1,5 +1,8 @@
 {% extends "bootstrap/base.html" %}
-
+{% block styles %}
+{{super()}}
+<link rel="stylesheet" href="{{url_for('.static', filename='style.css')}}">
+{% endblock %}
 {% block content %}
   <form action = "{{ url_for('addrec') }}" method = "POST">
    <h3>Call Log</h3>
@@ -11,9 +14,14 @@
    Out or In<br>
    <input type = "text" name = "Out_or_In" /><br>
    
-   <input type = "submit" value = "submit" /><br>
-   <a href= "{{ url_for('home') }}" class="btn btn-primary">Return Home</a>
+   
   </form>
+  <div class="btn-group">
+   <input type="submit" value="submit" class="btn">
+   <a href="{{ url_for('home') }}" class="btn btn-primary" role="button">Return Home</a>
+  </div>
+{% endblock %}
+
  </body>
 </html>
-{% endblock %}
+
